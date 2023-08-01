@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+            font-family: "Verdana";
+        }
+
+        .header {
+            color: aliceblue;
+            padding: 20px;
+        }
+
+        .card-img-top {
+            height: 280px;
+            width: auto;
+        }
+
+        .card {
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.12);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-dark header">
+        <h1>STOCKS AVAILABLE</h1>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <div class="card hover-zoom" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://w0.peakpx.com/wallpaper/860/473/HD-wallpaper-apple-iphone-apple-apple-logo-iphone-iphone-5-iphone-6-iphone-7-iphone-8-iphone-x-logo.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Apple Inc.</h3>
+                        <a href="/apple" class="btn btn-dark">Forecast</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://w0.peakpx.com/wallpaper/750/138/HD-wallpaper-google-amoled-black-google-logo-oled.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Google LLC.</h3>
+                        <a href="/google" class="btn btn-dark">Forecast</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="data:image/png;base64,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"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Microsoft Corp.</h3>
+                        <a href="/microsoft" class="btn btn-dark">Forecast</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
